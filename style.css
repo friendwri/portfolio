@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Didact+Gothic&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Mono:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Didact+Gothic&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Kosugi+Maru&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Mono:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik+Bubbles&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: fit-content;
+  text-transform: uppercase;
+  background-color: rebeccapurple;
+  color: yellow;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+nav a {
+  transition: color 0.15s ease-in;
+}
+
+nav a:hover {
+  color: pink;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 36px;
+}
+
+.hero .hero-text {
+  color: #fbfca8;
+
+  position: absolute;
+  bottom: -50px;
+  right: -100px;
+
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+.hero .hero-text h1 {
+  font-size: 64px;
+}
+
+.hero .lastname {
+  text-align: right;
+}
+
+.img-container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  animation: fadeIn 2s forwards;
+}
+body,
+html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("images/IMG_2193.JPG");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+}
+
+.fade-in {
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.img-me2 {
+  width: 300px;
+  height: 300px;
+  img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.all_textandimg {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 60px 100px;
+  gap: 200px;
+  p {
+    font-size: 25px;
+    font-family: cursive;
+    grid-column: span 2 / span 2;
+  }
+}
+
+.header-about {
+  background-color: rgb(183, 255, 165);
+  padding: 0 10px;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.container {
+  padding: 0 100px;
+  margin: 100px 0;
+
+  h2 {
+    font-size: 48px;
+    font-family: "DM Serif Display";
+  }
+}
+
+.header-parallax-container {
+  display: flex;
+  justify-content: end;
+  padding-top: 100px;
+}
+
+#about .header-parallax-container {
+  justify-content: start;
+  margin-left: 45px;
+}
+
+#about .header-parallax {
+  background-color: rgb(104, 235, 163);
+}
+
+.header-parallax {
+  background-color: rgb(248, 255, 147);
+  padding: 0 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(132, 249, 206);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 37, 161);
+  border-radius: 10px;
+}
+
+.edu-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.edu-con .edu-item {
+  padding: 60px;
+  text-align: center;
+
+  h5 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-family: "DM Serif Display", serif;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
+
+  p {
+    margin-top: 10px;
+  }
+}
+
+.edu-con {
+  p {
+    font-size: 15px;
+    font-family: "Didact Gothic", sans-serif;
+  }
+}
+
+.header-skill-container {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  left: 100%;
+  /* width: 100%; */
+  /* padding-top: 100px; */
+}
+
+.header-skill {
+  background-color: rgb(147, 223, 255);
+  padding: 0 60px;
+  border-radius: 10px;
+  align-self: center;
+}
+.skill-font 
+  p {
+    font-size: 20px;
+    font-family: cursive;
+    margin-top: 100px;
+    margin-left: 150px;
+    text-align: left;
+}
+.skill-font img {
+  margin: 0 auto;
+}
+.parallax {
+  /* The image used */
+  background-image: url("images/IMG_2193.JPG");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+}
+
+.skill-all .header-skill-container {
+  padding: 100px;
+  text-align: center;
+}
+
+.skill-font {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  p {
+  }
+}
+
+.skill-font .custom-hr {
+  transform: rotate(180deg);
+  height: 2px;
+  align-self: center;
+  background-color: rgb(20, 6, 117);
+  border: none;
+  width: 600px;
+}
+
+.header-contact-container {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  left: 100%;
+}
+
+.header-contact {
+  background-color: rgb(255, 179, 250);
+  padding: 0 20px;
+  border-radius: 10px;
+  align-self: center;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("images/IMG_2193.JPG");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+}
+
+.contact-all .header-contact-container {
+  padding: 100px;
+  text-align: center;
+}
+
+.social-img-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adds space between contact items */
+  padding: 20px;
+}
+
+/* Shared styles for all photo-contact containers */
+.photo-contact1,
+.photo-contact2,
+.photo-contact3 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 20px; /* Space between image and text */
+}
+
+/* Shared styles for all paragraphs */
+.photo-contact1 p,
+.photo-contact2 p,
+.photo-contact3 p {
+  font-size: 20px;
+  font-family: cursive;
+  margin: 0;
+  width: 100%; /* Removes default paragraph margins */
+}
+
+/* Image styles */
+.photo-contact1 img,
+.photo-contact2 img,
+.photo-contact3 img {
+  /* Remove float since we're using flexbox */
+  float: none;
+  margin-right: 0;
+  /* Optional: ensure images maintain aspect ratio */
+  object-fit: contain;
+}
